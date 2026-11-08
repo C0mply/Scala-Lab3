@@ -1,0 +1,6 @@
+D:\HomeWork\Functional programming\H3\compiler-examples\BrokenOptionReturn.scala:2: error: type mismatch;
+ found   : Int
+ required: Option[Int]
+  def safeDiv(n: Int, d: Int): Option[Int] = if (d == 0) None else n / d
+                                                                     ^
+1 error

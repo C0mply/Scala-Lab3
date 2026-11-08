@@ -1,0 +1,6 @@
+D:\HomeWork\Functional programming\H3\compiler-examples\BrokenOptionMix.scala:3: error: type mismatch;
+ found   : Seq[String]
+ required: Option[?]
+  val result = people.flatMap(entries => entries.flatMap(person => person.map(identity)))
+                                                        ^
+1 error

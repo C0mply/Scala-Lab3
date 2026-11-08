@@ -1,0 +1,14 @@
+[[syntax trees at end of                     typer]] // TypeProbe.scala
+package <empty> {
+  object TypeProbe extends scala.AnyRef {
+    def <init>(): TypeProbe.type = {
+      TypeProbe.super.<init>();
+      ()
+    };
+    def safeDiv(n: Int, d: Int): Any = if (d.==(0))
+      scala.None
+    else
+      n./(d)
+  }
+}
+

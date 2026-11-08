@@ -1,0 +1,37 @@
+SCALA LABORATORY WORK 3 - BEST PRACTICES AND IDIOMS
+Author: Andrew Galashin
+Scala 2.13.16; Java 21.0.13.0.2
+TASK 1 - Immutable tail-recursive Fibonacci
+fibs(10) = List(1, 2, 3, 5, 8, 13, 21, 34, 55, 89)
+PASS: supplied ten-term sequence
+PASS: zero, one and two terms
+PASS: negative term count rejected
+PASS: Int boundary and overflow detection
+PASS: length and recurrence for all supported counts 0 to 45
+TASK 2 - Options and collections using flatMap and map
+zipCodes = List(12345)
+PASS: explicit expression equals for comprehension
+PASS: absent outer option, empty sequence and missing values
+PASS: multiple addresses preserve order and duplicates
+TASK 3 - Inferred return type of the original safeDiv
+Scala 2.13 compiler inference: Any (see evidence/Type-inference.txt)
+safeDivOriginal(5, 0) = None
+safeDivOriginal(5, 2) = 2
+PASS: original returns None or a bare Int, not Option[Int]
+TASK 4 - Correct Option[Int] return type and flatten
+map = List(None, Some(5), Some(2))
+flatten = List(5, 2)
+PASS: safe division and flatMap
+PASS: negative operands and zero numerator
+TASK 5 - Pattern matching with a guard
+describeSign(-5) = Negative
+describeSign(0) = Zero
+describeSign(7) = Positive
+PASS: negative, zero, positive and Int extremes
+TASK 6 - Fully asynchronous composition
+Future result = The answer is 6
+PASS: for and flatMap versions produce The answer is 6
+PASS: composition returns before an unresolved input is completed
+PASS: pending input eventually yields the correct result
+PASS: a failed input is propagated as the same exception
+ALL CHECKS PASSED

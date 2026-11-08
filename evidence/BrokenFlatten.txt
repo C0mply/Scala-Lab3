@@ -1,0 +1,4 @@
+D:\HomeWork\Functional programming\H3\compiler-examples\BrokenFlatten.scala:3: error: No implicit view available from Any => scala.collection.IterableOnce[B].
+  val result = List(0, 1, 2).map(safeDiv(5, _)).flatten
+                                                ^
+1 error
